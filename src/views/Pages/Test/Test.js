@@ -29,9 +29,18 @@ class Test extends Component {
                             <Button color='danger' onClick={() => this.props.clickButton(-1)}>-</Button>
                         </Col>
                     </Row>
+                    <Row className={'justify-content-center'}>
+                        <Col md='6' className={'text-center'}>
+                            <Button color={'success'} onClick={this._clickHome}>HOME</Button>
+                        </Col>
+                    </Row>
                 </Container>
             </div>
         )
+    }
+
+    _clickHome(){
+        window.location.href = '/#/'
     }
 }
 
